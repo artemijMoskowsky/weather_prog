@@ -35,7 +35,7 @@ def user_room(master):
 
     data_base.close()
 
-    title = ctk.CTkLabel(master=room_window,width=100,height=25,text="Кімната користувача",font=("Arial",25),text_color="#FFFFFF")
+    title = ctk.CTkLabel(master=room_window,width=100,height=25,text="User room",font=("Arial",25),text_color="#FFFFFF")
     title.place(x= width // 2, y = height // 10, anchor= ctk.CENTER)
 
     reg_country = ctk.CTkLabel(master=room_window,width=100,height=25,text=data_country,font=("Arial",25),text_color="#FFFFFF")
@@ -53,7 +53,7 @@ def user_room(master):
     def room_button():
         room_window.destroy()
 
-    reg_button = ctk.CTkButton(master=room_window, width= 200, height= 30, text= "Вийти", corner_radius= 28, command= room_button)
+    reg_button = ctk.CTkButton(master=room_window, width= 200, height= 30, text= "Leave", corner_radius= 28, command= room_button)
     reg_button.place(x= width // 2, y = height // 1.1, anchor = ctk.CENTER)
 
     #room_window.mainloop()
